@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="perro" class="com.entelgy.model.Perro">
+        <constructor-arg value="Toby"/>
+    </bean>
+
+    <bean id="gato" class="com.entelgy.model.Gato">
+        <constructor-arg value="Garfield"/>
+    </bean>
+
+    <bean id="loro" class="com.entelgy.model.Loro">
+        <constructor-arg value="Piolín"/>
+    </bean>
+
+    <bean id="pez" class="com.entelgy.model.Pez">
+        <constructor-arg value="Nemo"/>
+    </bean>
+
+    <bean id="animalService" class="com.entelgy.service.AnimalService">
+        <property name="animals">
+            <list>
+                <ref bean="perro"/>
+                <ref bean="gato"/>
+                <ref bean="loro"/>
+                <ref bean="pez"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>
