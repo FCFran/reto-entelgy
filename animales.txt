@@ -1,4 +1,4 @@
 Toby|TERRESTRE|guau
 Garfield|TERRESTRE|miau
-Piolín|VOLADOR|squawk
-Nemo|ACUATICO|glub
+Pepe|VOLADOR|squawk
+Nemo|ACUATICO|glup-glup
